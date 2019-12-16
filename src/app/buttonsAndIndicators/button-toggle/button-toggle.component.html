@@ -1,0 +1,45 @@
+<div>
+  <mat-button-toggle #toggleBtn checked>Toggle</mat-button-toggle>
+  {{toggleBtn.checked}}
+</div>
+
+<br>
+<h3 class="mat-headline">Button toggle group</h3>
+<mat-button-toggle-group #group="matButtonToggleGroup">
+  <mat-button-toggle value="left" aria-label="Text align left">
+    <mat-icon>format_align_left</mat-icon>
+  </mat-button-toggle>
+  <mat-button-toggle value="center" aria-label="Text align center">
+    <mat-icon>format_align_center</mat-icon>
+  </mat-button-toggle>
+  <mat-button-toggle value="right" aria-label="Text align right">
+    <mat-icon>format_align_right</mat-icon>
+  </mat-button-toggle>
+  <mat-button-toggle value="justify" disabled aria-label="Text align justify">
+    <mat-icon>format_align_justify</mat-icon>
+  </mat-button-toggle>
+</mat-button-toggle-group>
+<div class="example-selected-value">Selected value: {{group.value}}</div>
+
+<br>
+<h3 class="mat-headline">Button toggle group Multiple</h3>
+<mat-button-toggle-group #group1="matButtonToggleGroup" multiple>
+  <mat-button-toggle value="left" aria-label="Text align left">
+    <mat-icon>format_align_left</mat-icon>
+  </mat-button-toggle>
+  <mat-button-toggle value="center" aria-label="Text align center">
+    <mat-icon>format_align_center</mat-icon>
+  </mat-button-toggle>
+  <mat-button-toggle value="right" aria-label="Text align right">
+    <mat-icon>format_align_right</mat-icon>
+  </mat-button-toggle>
+  <mat-button-toggle value="justify" disabled aria-label="Text align justify">
+    <mat-icon>format_align_justify</mat-icon>
+  </mat-button-toggle>
+</mat-button-toggle-group>
+<div class="example-selected-value">Selected value: {{group1.value}}</div>
+
+
+<br>
+<h5>For More Visit Angular Documentation</h5>
+<a href="https://material.angular.io/components/button-toggle/examples">https://material.angular.io/components/button-toggle/examples</a>

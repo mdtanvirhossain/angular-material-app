@@ -1,0 +1,75 @@
+<div>
+  <span matBadge="6">Message</span>&nbsp;&nbsp;
+  <span matBadge="3"><mat-icon>message</mat-icon></span>
+</div>
+
+<br>
+<h5 class="mat-headline">Badge Position</h5>
+<div>
+  <span matBadge="6" matBadgePosition="below after">Message</span>&nbsp;&nbsp;
+</div>
+<br>
+<div>
+  <span matBadge="6" matBadgePosition="below before">Message</span>&nbsp;&nbsp;
+</div>
+<br>
+<div>
+  <span matBadge="6" matBadgePosition="above after">Message</span>&nbsp;&nbsp;
+</div>
+<br>
+<div>
+  <span matBadge="6" matBadgePosition="above beforer">Message</span>&nbsp;&nbsp;
+</div>
+<!-------->
+<br>
+<h5 class="mat-headline">Badge Size</h5>
+<div>
+  <span matBadge="6" matBadgeSize="large">Message</span>&nbsp;&nbsp;
+</div>
+<br>
+<div>
+  <span matBadge="6" matBadgeSize="medium">Message</span>&nbsp;&nbsp;
+</div>
+<br>
+<div>
+  <span matBadge="6" matBadgeSize="small">Message</span>&nbsp;&nbsp;
+</div>
+
+<!---------------------------------->
+<br>
+<h5 class="mat-headline">Badge Color</h5>
+<div>
+  <span matBadge="6" matBadgeColor="accent">Message</span>&nbsp;&nbsp;
+</div>
+<br>
+<div>
+  <span matBadge="6" matBadgeColor="warn">Message</span>&nbsp;&nbsp;
+</div>
+<br>
+<div>
+  <span matBadge="6" matBadgeColor="primary">Message</span>&nbsp;&nbsp;
+</div>
+<!---------------------------------->
+<br>
+<h5 class="mat-headline">Badge Overlap</h5>
+<div>
+  <span matBadge="6" matBadgeColor="accent" matBadgeOverlap="false">Message</span>&nbsp;&nbsp;
+</div>
+
+<!---------------------------------->
+<br>
+<h5 class="mat-headline">Property binding</h5>
+<div>
+  <span [matBadge]="notification" matBadgeColor="accent" matBadgeOverlap="false">Message</span>&nbsp;&nbsp;
+</div>
+
+<!---------------------------------->
+<br>
+<h5 class="mat-headline">Conditional badge(if notification == 0)</h5>
+<div>
+  <span [matBadge]="notification" matBadgeColor="accent" matBadgeOverlap="false" [matBadgeHidden]="notification==0">Message</span>&nbsp;&nbsp;
+</div>
+
+<br>
+<h5>For More Visit Angular Documentation</h5>
+<a href="https://material.angular.io/components/badge/examples" target="_blank">https://material.angular.io/components/badge/examples</a>
